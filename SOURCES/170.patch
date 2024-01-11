@@ -1,0 +1,25 @@
+From 5afb3c219867f264f817c9be7e50353566cc325c Mon Sep 17 00:00:00 2001
+From: Xi Ruoyao <xry111@mengyan1223.wang>
+Date: Wed, 14 Apr 2021 23:25:45 +0800
+Subject: [PATCH] Allow building with GnuPG-2.3.x
+
+---
+ meson.build | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/meson.build b/meson.build
+index 978f1f10..0ed0ec26 100644
+--- a/meson.build
++++ b/meson.build
+@@ -26,7 +26,7 @@ endif
+ # Dependencies
+ min_glib_version = '2.58'
+ min_gcr_version = '3.38'
+-accepted_gpg_versions = [ '2.2.0' ]
++accepted_gpg_versions = [ '2.2.0', '2.3.0' ]
+ gpg_check_version = find_program('build-aux' / 'gpg_check_version.py')
+ 
+ glib_deps = [
+-- 
+GitLab
+
